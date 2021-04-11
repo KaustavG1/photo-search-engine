@@ -1,0 +1,8 @@
+.photo-item img {
+  transition: all ease 500ms;
+}
+
+.photo-item img:hover {
+  transform: scale(1.12);
+  opacity: 0.8;
+}

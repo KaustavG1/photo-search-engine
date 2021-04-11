@@ -1,0 +1,40 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.search-button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.search-bar {
+  width: 700px;
+}
+
+@media only screen and (max-width: 900px) {
+  .search-bar {
+    width: 575px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .search-bar {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .search-bar {
+    width: 250px;
+  }
+}
