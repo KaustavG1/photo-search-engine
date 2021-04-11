@@ -28,7 +28,7 @@ export const getPhotos = (searchTerm, pageNum=1) => {
             dispatch(getPhotosBegin());
             // TODO: Do actual data call and dispatch success/failure action accordingly
             const response = await axios.get(`${BASE_URL}${SEARCH}`, 
-                                            { headers: auth_headers, params: { page: pageNum, query: searchTerm, per_page: 8 } });
+                                            { headers: auth_headers, params: { page: pageNum, query: searchTerm } });
             dispatch(getPhotosSuccess(response.data));
         } catch(error) {
             dispatch(getPhotosFailure(error));
